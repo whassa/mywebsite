@@ -1,0 +1,25 @@
+body{
+            background-color: #F1F2F1;
+}
+.topMenu{
+}
+#textInfo{
+    margin-top: 10vh;
+    min-height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dbe0db;
+    text-align: center;
+}
+#textInfo p{
+    text-align: justify;
+}
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
