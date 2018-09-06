@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="css/home.css">
     </head>
     <body>
-    
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -18,7 +17,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                  </button>
-              <a class="navbar-brand" href="#">Rémi Graton</a>
+              <a class="navbar-brand" href="home">Rémi Graton</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -29,12 +28,8 @@
           </div><!-- /.container-fluid -->
         </nav>
         <div class="content"> 
-            <div id="textInfo" class="col-md-6 col-md-offset-3 col-lg-4  col-lg-offset-4"> 
-                <h2>Perdu ?</h2>
-                <p>Vous explorez des facettes de ma vie qui ne sont pas disponible pour vous.  Vous pouvez revenir à la page d'acceuil avec le lien suivant : <a href="">ici</a></p>
-            </div>
+            <?php echo $val ?>
         </div>
-        
     </body>
     
     <script src="includes/jquery-3.2.0.min.js"></script>
