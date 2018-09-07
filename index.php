@@ -14,7 +14,7 @@
                $html = call_user_func('app\\controller\\'.$controller .'::'.$action);
                echo $html;
            }catch(Exception $e){
-               http_response_code(404);
+               $html = call_user_func('app\\controller\\home::'.$action);
                die();
             }
         }
@@ -27,9 +27,9 @@
     }
         
     if ( isset($_REQUEST['action'])) {
-         $action =  $_REQUEST['action'];
+        $action =  $_REQUEST['action'];
         new index($controller, $action);
     } else {
-        new index($controller, 'index');
+        new index($controller, 'error404');
     }
 ?>

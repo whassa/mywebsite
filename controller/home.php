@@ -9,6 +9,11 @@
             return view('index.php');
         }
         
+        public static function error404(){
+                
+            return view('error404.php');
+        }
+        
     }
 
 
