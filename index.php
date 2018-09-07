@@ -1,7 +1,7 @@
 <?php
     namespace app;
     
-    class index
+    class actionController
     {
         public function __construct($controller, $action){
            $this->showView($controller, $action);
@@ -28,8 +28,8 @@
         
     if ( isset($_REQUEST['action'])) {
         $action =  $_REQUEST['action'];
-        new index($controller, $action);
+        new actionController($controller, $action);
     } else {
-        new index($controller, 'error404');
+        new actionController($controller, 'index');
     }
 ?>
