@@ -12,7 +12,7 @@
            try{
                include("controller/".$controller.".php");
                $html = call_user_func('app\\controller\\'.$controller .'::'.$action);
-               echo $html;
+               
            }catch(Exception $e){
                $html = call_user_func('app\\controller\\home::'.$action);
                die();
